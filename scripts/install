@@ -31,7 +31,7 @@ app=$YNH_APP_INSTANCE_NAME
 
 admin=$YNH_APP_ARG_ADMIN
 password=$YNH_APP_ARG_PASSWORD
-password=$YNH_APP_ARG_LICENSE
+license=$YNH_APP_ARG_LICENSE
 
 #=================================================
 # CHECK IF THE APP CAN BE INSTALLED WITH THESE ARGS
@@ -51,6 +51,11 @@ ynh_script_progression --message="Storing installation settings..." --weight=1
 
 ynh_app_setting_set --app=$app --key=domain --value=$domain
 ynh_app_setting_set --app=$app --key=path --value=$path_url
+
+ynh_app_setting_set --app=$app --key=admin --value=$admin
+ynh_app_setting_set --app=$app --key=password --value=$password
+ynh_app_setting_set --app=$app --key=license --value=$license
+
 
 #=================================================
 # STANDARD MODIFICATIONS
