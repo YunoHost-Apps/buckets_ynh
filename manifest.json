@@ -1,0 +1,60 @@
+{
+    "name": "Buckets",
+    "id": "buckets",
+    "packaging_format": 1,
+    "description": {
+        "en": "The relay service for the Buckets budgeting app",
+        "fr": "Serveur relais pour l'application de gestion de budget Buckets"
+    },
+    "version": "v0.2.0.1~ynh1",
+    "url": "https://github.com/YunoHost-Apps/buckets_ynh",
+    "upstream": {
+        "license": "mit",
+        "website": "https://budgetwithbuckets.com",
+        "demo": "https://relay.budgetwithbuckets.com/v1/",
+        "admindoc": "https://www.budgetwithbuckets.com/guide/app/sharing/",
+        "code": "https://github.com/buckets/relay"
+    },
+    "license": "mit",
+    "maintainer": {
+        "name": "Raoul de Limezy"
+    },
+    "requirements": {
+        "yunohost": ">= 11.0.9"
+    },
+    "multi_instance": true,
+    "services": [
+        "nginx"
+    ],
+    "arguments": {
+        "install": [
+            {
+                "name": "domain",
+                "type": "domain"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "example": "/example",
+                "default": "/example"
+            },
+            {
+                "name": "is_public",
+                "type": "boolean",
+                "default": true,
+                "help": {
+                    "en": "If public, anyone will be able to use this Nitter instance to browse Twitter. Note that heavy usage may cause Twitter API rate limits to be hit.",
+                    "fr": "Si public, tout le monde pourra utiliser cette instance Nitter pour parcourir Twitter. Notez qu'un usage trop intensif peut être bridé par l'API Twitter au dela d'un certain seuil."
+                }
+            },
+            {
+                "name": "admin",
+                "type": "user"
+            },
+            {
+                "name": "password",
+                "type": "password"
+            }
+        ]
+    }
+}

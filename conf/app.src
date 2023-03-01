@@ -1,7 +1,7 @@
-SOURCE_URL=url of app's source
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=https://github.com/buckets/relay/archive/3994f2dd92792bff7af774019a1912f9f80e6583.zip
+SOURCE_SUM=da100d453e57cd6949d356bc42eb18e0e201bfde9d6815c177f5aeb184edbd2e
 SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
-SOURCE_IN_SUBDIR=true
+SOURCE_FORMAT=zip
+SOURCE_IN_SUBDIR=false
 SOURCE_FILENAME=
 SOURCE_EXTRACT=true
