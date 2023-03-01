@@ -39,21 +39,16 @@
                 "default": "/example"
             },
             {
-                "name": "is_public",
-                "type": "boolean",
-                "default": true,
-                "help": {
-                    "en": "If public, anyone will be able to use this Nitter instance to browse Twitter. Note that heavy usage may cause Twitter API rate limits to be hit.",
-                    "fr": "Si public, tout le monde pourra utiliser cette instance Nitter pour parcourir Twitter. Notez qu'un usage trop intensif peut être bridé par l'API Twitter au dela d'un certain seuil."
-                }
-            },
-            {
                 "name": "admin",
                 "type": "user"
             },
             {
                 "name": "password",
                 "type": "password"
+            },
+            {
+                "name": "license",
+                "type": "string"
             }
         ]
     }
