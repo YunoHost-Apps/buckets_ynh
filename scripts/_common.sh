@@ -5,7 +5,7 @@
 #=================================================
 
 # dependencies used by the app
-pkg_dependencies="nim libressl3.1-libcrypto sqlite-dev libsodium-static libsodium musl-dev"
+pkg_dependencies=""
 
 #=================================================
 # PERSONAL HELPERS
