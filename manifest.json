@@ -6,7 +6,7 @@
         "en": "The relay service for the Buckets budgeting app",
         "fr": "Serveur relais pour l'application de gestion de budget Buckets"
     },
-    "version": "v0.2.0.1~ynh1",
+    "version": "0.2.0.1~ynh1",
     "url": "https://github.com/YunoHost-Apps/buckets_ynh",
     "upstream": {
         "license": "mit",
