@@ -1,0 +1,22 @@
+version = "1.0"
+
+[main]
+name = "Buckets configuration"
+services = ["__APP__"]
+
+[main.config]
+name = "Configuration Options"
+
+[main.config.admin]
+ask = "Change user"
+type = "string"
+default = "User"
+help = "Change user name"
+bind = "admin:__FINALPATH__/.env"
+
+[main.config.password]
+ask = "Change user"
+type = "string"
+default = "Password"
+help = "Change password"
+bind = "password:__FINALPATH__/.env"
