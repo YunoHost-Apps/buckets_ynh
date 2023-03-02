@@ -5,7 +5,7 @@
 		is_public=1
 		admin="admin"
 		password="password"
-		license=""
+		license="license"
 	; Checks
 		pkg_linter=1
 		setup_sub_dir=1
